@@ -1,5 +1,9 @@
 # codes for my publications 
 
+* [arXiv:1802.08538](https://arxiv.org/abs/1802.08538)
+[DOI:10.1103/PhysRevB.97.205125](https://doi.org/10.1103/PhysRevB.97.205125)
+ * classical MC for the extended Hubbard model (atomic limit) and the Blume-Capel Model on a triangular lattice
+
 * [arXiv:1801.00064](https://arxiv.org/abs/1801.00064)
 [DOI:10.1103/PhysRevB.97.125142](https://doi.org/10.1103/PhysRevB.97.125142)
   * Hartree-Fock approximation that reproduces part of the results
