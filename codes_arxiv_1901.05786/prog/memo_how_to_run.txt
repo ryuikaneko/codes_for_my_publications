@@ -1,0 +1,28 @@
+# to run the code, copy the codes from the following repository
+
+git clone https://github.com/TsuyoshiOkubo/pTNS
+mkdir kiteav_loop_gas
+cd kiteav_loop_gas
+cp ../pTNS/TPS/python/*.py .
+cp ../pTNS/TPS/python/sample_Kitaev/*.py .
+
+# then, copy Model_Kitaev_modified.py to the same directory
+# the code is supported only for python2.7
+
+# the options are here
+#
+# -ss [# steps of simple update]
+# -sf [# steps of full update]
+# -ir [amplitude of randomness in the initial wave function]
+# -i [initial state]
+#    11: loop gas D=4 
+#    12: loop gas D=2
+
+# without update, no randomness, loop gas D=4 init
+python Model_Kitaev_modified.py -ss 0 -sf 0 -ir 0.0 -i 11
+
+# without update, no randomness, loop gas D=2 init
+python Model_Kitaev_modified.py -ss 0 -sf 0 -ir 0.0 -i 12
+
+# with update, no randomness, loop gas D=2 init
+python Model_Kitaev_modified.py -ss 1000 -sf 0 -ir 0.0 -i 12
