@@ -1,5 +1,9 @@
 # codes for my publications 
 
+* [arXiv:1905.11408](https://arxiv.org/abs/1905.11408)
+[DOI:10.1103/PhysRevResearch.2.013014](https://doi.org/10.1103/PhysRevResearch.2.013014)
+  * simulated annealing code for the classical Kitaev-Gamma-Gamma' model with the magnetic field
+
 * [arXiv:1802.08538](https://arxiv.org/abs/1802.08538)
 [DOI:10.1103/PhysRevB.97.205125](https://doi.org/10.1103/PhysRevB.97.205125)
   * classical MC for the extended Hubbard model (atomic limit) and the Blume-Capel model on a triangular lattice
