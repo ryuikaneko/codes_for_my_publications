@@ -1,0 +1,44 @@
+set size square
+#set size 0.5
+set xlabel "K_x"
+set ylabel "K_y" offset 3,0
+#set xrange [-2*pi:2*pi]
+#set yrange [-2*pi:2*pi]
+set xrange [-1.8*pi:1.8*pi]
+set yrange [-1.8*pi:1.8*pi]
+set xtics ("-2{/Symbol p}/{/Symbol @{\140}\326}3" -2.0*pi/sqrt(3.0), "0" 0, "2{/Symbol p}/{/Symbol @{\140}\326}3" 2.0*pi/sqrt(3.0))
+set ytics ("-4{/Symbol p}/3" -4.0*pi/3.0, "0" 0, "4{/Symbol p}/3" 4.0*pi/3.0)
+set tics front
+
+#set cbrange [0:0.25]
+#unset colorbox
+set palette defined (0 "white", 1 "red")
+
+set style arrow 1 filled nohead lw 2
+set arrow  1 as 1 from 2.0*pi/sqrt(3.0),-2.0*pi/3.0 to 2.0*pi/sqrt(3.0),2.0*pi/3.0 front
+set arrow  2 as 1 from 2.0*pi/sqrt(3.0),2.0*pi/3.0 to 0,4.0*pi/3.0 front
+set arrow  3 as 1 from 0,4.0*pi/3.0 to -2.0*pi/sqrt(3.0),2.0*pi/3.0 front
+set arrow  4 as 1 from -2.0*pi/sqrt(3.0),2.0*pi/3.0 to -2.0*pi/sqrt(3.0),-2.0*pi/3.0 front
+set arrow  5 as 1 from -2.0*pi/sqrt(3.0),-2.0*pi/3.0 to 0,-4.0*pi/3.0 front
+set arrow  6 as 1 from 0,-4.0*pi/3.0 to 2.0*pi/sqrt(3.0),-2.0*pi/3.0 front
+#
+set arrow  7 as 1 from 4.0*pi/3.0/sqrt(3.0),0 to 2.0*pi/3.0/sqrt(3.0),2.0*pi/3.0 front
+set arrow  8 as 1 from 2.0*pi/3.0/sqrt(3.0),2.0*pi/3.0 to -2.0*pi/3.0/sqrt(3.0),2.0*pi/3.0 front
+set arrow  9 as 1 from -2.0*pi/3.0/sqrt(3.0),2.0*pi/3.0 to -4.0*pi/3.0/sqrt(3.0),0 front
+set arrow 10 as 1 from -4.0*pi/3.0/sqrt(3.0),0 to -2.0*pi/3.0/sqrt(3.0),-2.0*pi/3.0 front
+set arrow 11 as 1 from -2.0*pi/3.0/sqrt(3.0),-2.0*pi/3.0 to 2.0*pi/3.0/sqrt(3.0),-2.0*pi/3.0 front
+set arrow 12 as 1 from 2.0*pi/3.0/sqrt(3.0),-2.0*pi/3.0 to 4.0*pi/3.0/sqrt(3.0),0 front
+
+p "dat_sq" i 1 u 3:4:5 w image ti ""
+pause -1
+
+set style fill solid border lt 0
+L=12
+#L=3
+circsize=pi/L*0.5
+p "dat_sq" i 1 u 3:4:(circsize):5 w circles lc palette lw 0.5 ti ""
+pause -1
+
+set cbrange [0:0.25]
+replot
+pause -1

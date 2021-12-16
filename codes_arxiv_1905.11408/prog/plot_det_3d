@@ -1,0 +1,10 @@
+set xrange [-1:1]
+set yrange [-1:1]
+set zrange [-1:1]
+set view equal xyz
+set ticslevel 0
+
+sp \
+"dat" u (0):(0):(0) i 1 w p ls 1 pt 6 ti "", \
+"dat" u (0):(0):(0):6:7:8 i 1 w vec ls 1 ti ""
+pause -1

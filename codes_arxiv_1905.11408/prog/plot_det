@@ -1,0 +1,35 @@
+#set xrange [-25:35]
+#set yrange [-5:30]
+set size square
+set size ratio -1
+unset border
+unset xtics
+unset ytics
+#set pointsize 2
+
+p \
+"dat" u 4:5 i 1 w p ls 1 pt 6 ti "", \
+"dat" u ($4-$6/2):($5-$7/2):6:7 i 1 w vec ls 1 ti ""
+pause -1
+
+p \
+"dat" u 4:5 i 1 w p ls 1 pt 6 ti "", \
+"dat" u ($4-$7/2):($5-$8/2):7:8 i 1 w vec ls 1 ti ""
+pause -1
+
+p \
+"dat" u 4:5 i 1 w p ls 1 pt 6 ti "", \
+"dat" u ($4-$8/2):($5-$6/2):8:6 i 1 w vec ls 1 ti ""
+pause -1
+
+reset
+
+set xrange [0:6]
+set yrange [0:6]
+set view equal xyz
+set ticslevel 0
+
+sp \
+"dat" u 4:5:(0) i 1 w p ls 1 pt 6 ti "", \
+"dat" u ($4-$6/2):($5-$7/2):(-$8/2):6:7:8 i 1 w vec ls 1 ti ""
+pause -1

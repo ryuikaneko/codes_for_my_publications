@@ -1,0 +1,2 @@
+tail -n 434 dat_t0.25 | head -n 288 > dat
+tail -n 29 dat_t0.25 | head -n 18 > dat
