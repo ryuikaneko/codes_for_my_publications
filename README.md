@@ -6,6 +6,8 @@
 
 * [arXiv:1901.05786](https://arxiv.org/abs/1901.05786)
 [DOI:10.1103/PhysRevLett.123.087203](https://doi.org/10.1103/PhysRevLett.123.087203)
+  * loop gas ansatz for the Kitaev spin liquid
+  * requires https://github.com/TsuyoshiOkubo/pTNS
 
 * [arXiv:1802.08538](https://arxiv.org/abs/1802.08538)
 [DOI:10.1103/PhysRevB.97.205125](https://doi.org/10.1103/PhysRevB.97.205125)
