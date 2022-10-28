@@ -1,0 +1,5 @@
+set term png
+set output "fig.png"
+p \
+"< cat dat_renyi_L24_t* | sort -g -k 1" u 1:2 w lp ti ""
+#pause -1
