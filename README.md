@@ -1,5 +1,8 @@
 # codes for my publications 
 
+* [arXiv:2207.08353](https://arxiv.org/abs/2207.08353)
+  * calculate Renyi entanglement after a quench in a free bosonic chain by computing the permanent of a matrix
+
 * [arXiv:1905.11408](https://arxiv.org/abs/1905.11408)
 [DOI:10.1103/PhysRevResearch.2.013014](https://doi.org/10.1103/PhysRevResearch.2.013014)
   * simulated annealing code for the classical Kitaev-Gamma-Gamma' model with the magnetic field
