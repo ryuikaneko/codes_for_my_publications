@@ -4,6 +4,11 @@
   * calculate Renyi entanglement after a quench in a free bosonic chain by computing the permanent of a matrix
   * python example: quench from a charge-density-wave state for size L=20 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ryuikaneko/codes_for_my_publications/blob/master/codes_arxiv_2207.08353/prog/python/colab_bose_hubbard_entanglement_cdw.ipynb)
 
+* [arXiv:2103.04515](https://arxiv.org/abs/2103.04515)
+[DOI:10.1103/PhysRevB.104.045133](https://doi.org/10.1103/PhysRevB.104.045133)
+  * RPMPS+T (using ITensor): https://github.com/ShimpeiGoto/RPMPS-T
+  * running example: calculate finite-temperature properties in quantum 1D systems [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ryuikaneko/google_colab_comp_phys/blob/master/install_and_run_rpmps_t_executed.ipynb)
+
 * [arXiv:1905.11408](https://arxiv.org/abs/1905.11408)
 [DOI:10.1103/PhysRevResearch.2.013014](https://doi.org/10.1103/PhysRevResearch.2.013014)
   * simulated annealing code for the classical Kitaev-Gamma-Gamma' model with the magnetic field
